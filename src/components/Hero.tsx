@@ -1,10 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, ArrowRight } from "lucide-react";
 import heroImage from "@/assets/hero-electrician.jpg";
+import logoIcon from "@/assets/logo-icon.jpg";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Logo top left */}
+      <div className="absolute top-8 left-8 z-20">
+        <img 
+          src={logoIcon} 
+          alt="Eletric Energy" 
+          className="h-16 w-16 object-contain"
+        />
+      </div>
       {/* Background with gradient overlay */}
       <div className="absolute inset-0 z-0">
         <img 

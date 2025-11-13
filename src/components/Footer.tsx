@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
+import logoFull from "@/assets/logo-full.jpg";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,9 +10,11 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Company Info */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold">
-              <span className="gradient-text-orange">Eletric</span> Energy
-            </h3>
+            <img 
+              src={logoFull} 
+              alt="Eletric Energy Logo" 
+              className="h-16 w-auto object-contain"
+            />
             <p className="text-muted-foreground leading-relaxed">
               Soluções completas em energia e segurança eletrônica para residências, 
               indústrias e comércio.
