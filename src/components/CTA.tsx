@@ -44,9 +44,12 @@ const CTA = () => {
               <Button 
                 size="lg" 
                 className="group hover-glow-orange text-lg px-10 py-7"
+                asChild
               >
-                Solicitar Orçamento Grátis
-                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+                <a href="https://wa.me/5515996570260?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20grátis%20para%20serviços%20elétricos%20e%20de%20segurança." target="_blank" rel="noopener noreferrer">
+                  Solicitar Orçamento Grátis
+                  <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+                </a>
               </Button>
               
               <Button 
@@ -55,7 +58,7 @@ const CTA = () => {
                 className="bg-card/50 backdrop-blur-sm border-accent text-accent hover:bg-accent hover:text-accent-foreground text-lg px-10 py-7"
                 asChild
               >
-                <a href="https://wa.me/5515996570260?text=Ol%C3%A1!%20%F0%9F%91%8B%20Aqui%20%C3%A9%20da%20Eletric%20Energy.%20Como%20posso%20ajudar%20voc%C3%AA%20hoje%3F%20Precisando%20de%20or%C3%A7amento%20para%20manuten%C3%A7%C3%A3o%20el%C3%A9trica%20ou%20seguran%C3%A7a%20eletr%C3%B4nica%3F" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/5515996570260?text=Olá!%20Gostaria%20de%20falar%20com%20a%20Eletric%20Energy." target="_blank" rel="noopener noreferrer">
                   <Phone className="mr-2" />
                   Ligar Agora
                 </a>
