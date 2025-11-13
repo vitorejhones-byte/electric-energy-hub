@@ -112,14 +112,19 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
                 <div>
-                  <div className="text-foreground break-all">contato@eletricenergy.com.br</div>
+                  <a 
+                    href="mailto:eletricenergy14@gmail.com"
+                    className="text-foreground break-all hover:text-accent transition-colors"
+                  >
+                    eletricenergy14@gmail.com
+                  </a>
                   <div className="text-sm text-muted-foreground">Resposta em 24h</div>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                 <div>
-                  <div className="text-foreground">São Paulo, SP</div>
+                  <div className="text-foreground">Pilar do Sul, SP</div>
                   <div className="text-sm text-muted-foreground">Atendemos toda região</div>
                 </div>
               </li>
