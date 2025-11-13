@@ -79,7 +79,7 @@ const CTA = () => {
               </a>
               <div className="p-6 bg-card/50 backdrop-blur-sm border border-border rounded-xl">
                 <div className="text-sm text-muted-foreground mb-1">E-mail</div>
-                <div className="font-bold text-lg text-sm">contato@eletricenergy.com.br</div>
+                <div className="font-bold text-lg text-sm">eletricenergy14@gmail.com</div>
               </div>
             </div>
 
