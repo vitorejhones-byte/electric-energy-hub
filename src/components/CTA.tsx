@@ -53,9 +53,12 @@ const CTA = () => {
                 size="lg" 
                 variant="outline"
                 className="bg-card/50 backdrop-blur-sm border-accent text-accent hover:bg-accent hover:text-accent-foreground text-lg px-10 py-7"
+                asChild
               >
-                <Phone className="mr-2" />
-                Ligar Agora
+                <a href="https://wa.me/5515996570260?text=Ol%C3%A1!%20%F0%9F%91%8B%20Aqui%20%C3%A9%20da%20Eletric%20Energy.%20Como%20posso%20ajudar%20voc%C3%AA%20hoje%3F%20Precisando%20de%20or%C3%A7amento%20para%20manuten%C3%A7%C3%A3o%20el%C3%A9trica%20ou%20seguran%C3%A7a%20eletr%C3%B4nica%3F" target="_blank" rel="noopener noreferrer">
+                  <Phone className="mr-2" />
+                  Ligar Agora
+                </a>
               </Button>
             </div>
 
@@ -65,10 +68,15 @@ const CTA = () => {
                 <div className="text-sm text-muted-foreground mb-1">Telefone</div>
                 <div className="font-bold text-lg">(11) 98765-4321</div>
               </div>
-              <div className="p-6 bg-card/50 backdrop-blur-sm border border-border rounded-xl">
+              <a 
+                href="https://wa.me/5515996570260?text=Ol%C3%A1!%20%F0%9F%91%8B%20Aqui%20%C3%A9%20da%20Eletric%20Energy.%20Como%20posso%20ajudar%20voc%C3%AA%20hoje%3F%20Precisando%20de%20or%C3%A7amento%20para%20manuten%C3%A7%C3%A3o%20el%C3%A9trica%20ou%20seguran%C3%A7a%20eletr%C3%B4nica%3F"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-6 bg-card/50 backdrop-blur-sm border border-border rounded-xl hover:border-accent transition-colors block"
+              >
                 <div className="text-sm text-muted-foreground mb-1">WhatsApp</div>
-                <div className="font-bold text-lg">(11) 98765-4321</div>
-              </div>
+                <div className="font-bold text-lg">(15) 99657-0260</div>
+              </a>
               <div className="p-6 bg-card/50 backdrop-blur-sm border border-border rounded-xl">
                 <div className="text-sm text-muted-foreground mb-1">E-mail</div>
                 <div className="font-bold text-lg text-sm">contato@eletricenergy.com.br</div>
