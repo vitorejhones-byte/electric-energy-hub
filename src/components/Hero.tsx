@@ -2,25 +2,15 @@ import { Button } from "@/components/ui/button";
 import { MessageCircle, ArrowRight } from "lucide-react";
 import logoIcon from "@/assets/logo-icon.jpg";
 import heroCover from "@/assets/hero-cover.png";
-
 const Hero = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Logo top left */}
       <div className="absolute top-8 left-8 z-20">
-        <img 
-          src={logoIcon} 
-          alt="Eletric Energy" 
-          className="h-16 w-16 object-contain"
-        />
+        <img src={logoIcon} alt="Eletric Energy" className="h-16 w-16 object-contain" />
       </div>
       {/* Hero Cover Background */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src={heroCover}
-          alt="Equipe Eletric Energy"
-          className="w-full h-full object-cover"
-        />
+        <img src={heroCover} alt="Equipe Eletric Energy" className="w-full h-full object-cover" />
         {/* Dark overlay to reduce blue intensity */}
         <div className="absolute inset-0 bg-background/60" />
         {/* Gradient overlay for better text contrast */}
@@ -54,23 +44,14 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-            <Button 
-              size="lg" 
-              className="group hover-glow-orange text-lg px-8 py-6"
-              asChild
-            >
+            <Button size="lg" className="group hover-glow-orange text-lg px-8 py-6" asChild>
               <a href="https://wa.me/5515996570260?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20serviços%20elétricos%20e%20de%20segurança%20eletrônica." target="_blank" rel="noopener noreferrer">
                 Solicitar Orçamento
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>
             
-            <Button 
-              size="lg" 
-              variant="outline"
-              className="bg-accent/10 border-accent text-accent hover:bg-accent hover:text-accent-foreground text-lg px-8 py-6"
-              asChild
-            >
+            <Button size="lg" variant="outline" className="bg-accent/10 border-accent text-accent hover:bg-accent hover:text-accent-foreground text-lg px-8 py-6" asChild>
               <a href="https://wa.me/5515996570260?text=Olá!%20Gostaria%20de%20falar%20com%20a%20Eletric%20Energy%20sobre%20serviços%20elétricos." target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="mr-2" />
                 Falar no WhatsApp
@@ -85,7 +66,7 @@ const Hero = () => {
               <div className="text-sm text-muted-foreground mt-1">Anos de Experiência</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold gradient-text-blue">500+</div>
+              <div className="text-3xl md:text-4xl font-bold gradient-text-blue">200+</div>
               <div className="text-sm text-muted-foreground mt-1">Projetos Concluídos</div>
             </div>
             <div className="text-center">
@@ -98,8 +79,6 @@ const Hero = () => {
 
       {/* Bottom gradient fade */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent z-0" />
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
