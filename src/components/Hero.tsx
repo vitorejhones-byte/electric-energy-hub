@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, ArrowRight } from "lucide-react";
 import logoIcon from "@/assets/logo-icon.jpg";
-import teamMember1 from "@/assets/team-member-1.jpg";
-import teamMember2 from "@/assets/team-member-2.jpg";
-import BackgroundRemover from "./BackgroundRemover";
+import heroCover from "@/assets/hero-cover.png";
 
 const Hero = () => {
   return (
@@ -16,36 +14,17 @@ const Hero = () => {
           className="h-16 w-16 object-contain"
         />
       </div>
-      {/* Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-primary/5 to-accent/10" />
-      
-      {/* Decorative elements */}
-      <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-20 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-20 right-1/4 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
-      </div>
-
-      {/* Team Members with removed background */}
-      <div className="absolute inset-0 z-5 pointer-events-none">
-        {/* Member 1 - Left */}
-        <div className="absolute left-0 bottom-0 w-1/3 md:w-2/5 lg:w-1/3 h-full flex items-end">
-          <BackgroundRemover
-            src={teamMember1}
-            alt="Profissional Eletric Energy"
-            className="w-full h-auto object-contain"
-            position="left"
-          />
-        </div>
-        
-        {/* Member 2 - Right */}
-        <div className="absolute right-0 bottom-0 w-1/3 md:w-2/5 lg:w-1/3 h-full flex items-end">
-          <BackgroundRemover
-            src={teamMember2}
-            alt="Profissional Eletric Energy"
-            className="w-full h-auto object-contain"
-            position="right"
-          />
-        </div>
+      {/* Hero Cover Background */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src={heroCover}
+          alt="Equipe Eletric Energy"
+          className="w-full h-full object-cover"
+        />
+        {/* Dark overlay to reduce blue intensity */}
+        <div className="absolute inset-0 bg-background/60" />
+        {/* Gradient overlay for better text contrast */}
+        <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/40 to-background/80" />
       </div>
 
       {/* Geometric elements */}
