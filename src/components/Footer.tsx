@@ -28,7 +28,9 @@ const Footer = () => {
                 <Facebook className="w-5 h-5 text-primary" />
               </a>
               <a 
-                href="#" 
+                href="https://www.instagram.com/eletricenergy25?igsh=MThjMmRscGIzdWlpaQ==" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-2 bg-accent/10 rounded-lg hover:bg-accent/20 transition-colors hover-scale"
                 aria-label="Instagram"
               >
