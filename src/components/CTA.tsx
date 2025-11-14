@@ -66,11 +66,7 @@ const CTA = () => {
             </div>
 
             {/* Contact info */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-12 max-w-3xl mx-auto">
-              <div className="p-6 bg-card/50 backdrop-blur-sm border border-border rounded-xl">
-                <div className="text-sm text-muted-foreground mb-1">Telefone</div>
-                <div className="font-bold text-lg">(11) 98765-4321</div>
-              </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-12 max-w-2xl mx-auto">
               <a 
                 href="https://wa.me/5515996570260?text=Ol%C3%A1!%20%F0%9F%91%8B%20Aqui%20%C3%A9%20da%20Eletric%20Energy.%20Como%20posso%20ajudar%20voc%C3%AA%20hoje%3F%20Precisando%20de%20or%C3%A7amento%20para%20manuten%C3%A7%C3%A3o%20el%C3%A9trica%20ou%20seguran%C3%A7a%20eletr%C3%B4nica%3F"
                 target="_blank"
