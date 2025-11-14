@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
+import { Mail, MessageCircle, MapPin, Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 import logoFull from "@/assets/logo-full.jpg";
 
 const Footer = () => {
@@ -96,7 +96,7 @@ const Footer = () => {
             <h4 className="font-bold mb-4 text-foreground">Contato</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <Phone className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                <MessageCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                 <div>
                   <a 
                     href="https://wa.me/5515996570260?text=Ol%C3%A1!%20%F0%9F%91%8B%20Aqui%20%C3%A9%20da%20Eletric%20Energy.%20Como%20posso%20ajudar%20voc%C3%AA%20hoje%3F%20Precisando%20de%20or%C3%A7amento%20para%20manuten%C3%A7%C3%A3o%20el%C3%A9trica%20ou%20seguran%C3%A7a%20eletr%C3%B4nica%3F"
