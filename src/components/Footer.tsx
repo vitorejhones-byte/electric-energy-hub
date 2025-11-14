@@ -21,7 +21,9 @@ const Footer = () => {
             </p>
             <div className="flex gap-3 pt-4">
               <a 
-                href="#" 
+                href="https://www.facebook.com/share/17z3WVtU6o/" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-2 bg-primary/10 rounded-lg hover:bg-primary/20 transition-colors hover-scale"
                 aria-label="Facebook"
               >
