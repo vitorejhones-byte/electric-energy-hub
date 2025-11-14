@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button";
 import { MessageCircle, ArrowRight } from "lucide-react";
 import heroImage from "@/assets/hero-electrician.jpg";
 import logoIcon from "@/assets/logo-icon.jpg";
+import teamMember1 from "@/assets/team-member-1.jpg";
+import teamMember2 from "@/assets/team-member-2.jpg";
 
 const Hero = () => {
   return (
@@ -19,9 +21,32 @@ const Hero = () => {
         <img 
           src={heroImage}
           alt="Técnico profissional em ação"
-          className="w-full h-full object-cover opacity-40"
+          className="w-full h-full object-cover opacity-20"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/98 to-background/95" />
+      </div>
+
+      {/* Team Members */}
+      <div className="absolute inset-0 z-5 pointer-events-none">
+        {/* Member 1 - Left */}
+        <div className="absolute left-0 top-1/2 -translate-y-1/2 w-64 md:w-80 lg:w-96">
+          <img 
+            src={teamMember1}
+            alt="Profissional Eletric Energy"
+            className="w-full h-auto object-contain mix-blend-lighten opacity-80"
+            style={{ filter: 'drop-shadow(0 10px 30px rgba(0,0,0,0.3))' }}
+          />
+        </div>
+        
+        {/* Member 2 - Right */}
+        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-64 md:w-80 lg:w-96">
+          <img 
+            src={teamMember2}
+            alt="Profissional Eletric Energy"
+            className="w-full h-auto object-contain mix-blend-lighten opacity-80"
+            style={{ filter: 'drop-shadow(0 10px 30px rgba(0,0,0,0.3))' }}
+          />
+        </div>
       </div>
 
       {/* Geometric elements */}
